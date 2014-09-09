@@ -1,0 +1,137 @@
+Running: C:\Xilinx\12.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/AVR8_tb_isim_beh.exe -prj C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/AVR8_tb_beh.prj work.AVR8_tb 
+ISim M.63c (signature 0x7dea747)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/CommonPacks/SynthCtrlPack.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/JTAG_OCD_Prg/JTAGTAPCtrlSMPack.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/JTAG_OCD_Prg/JTAGProgrammerPack.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/JTAG_OCD_Prg/JTAGPack.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/JTAG_OCD_Prg/JTAGDataPack.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/CommonPacks/AVRuCPackage.vhd" into library work
+WARNING:HDLCompiler:443 - "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/CommonPacks/AVRuCPackage.vhd" Line 177: Function log2 does not always return a value.
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/resync/rsnc_comp_pack.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/resync/rsnc_bit.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/Peripheral/SynchronizerLatch.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/Peripheral/SynchronizerDFF.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/Peripheral/SynchronizerCompPack.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/MemArbAndMux/MemAccessCtrlPack.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/JTAG_OCD_Prg/Resync1b_TCK.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/JTAG_OCD_Prg/Resync1b_cp2.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/JTAG_OCD_Prg/OCDProgTCK.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/JTAG_OCD_Prg/OCDProgcp2.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/JTAG_OCD_Prg/JTAGCompPack.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/Core/reg_file.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/Core/pm_fetch_dec.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/Core/io_reg_file.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/Core/io_adr_dec.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/Core/bit_processor.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/Core/AVR_Core_CompPack.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/Core/alu_avr.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/CommonPacks/std_library.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/CommonPacks/avr_adr_pack.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/uC/ResetGenerator.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/uC/RAMDataReg.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/uC/external_mux.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/uC/AVR_uC_CompPack.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/spi_mod/spi_slv_sel_comp_pack.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/spi_mod/spi_slv_sel.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/spi_mod/spi_mod_comp_pack.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/spi_mod/spi_mod.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/Peripheral/uart.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/Peripheral/Timer_Counter.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/Peripheral/swap_pins.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/Peripheral/portx.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/Memory/XPM8Kx16.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/Memory/XMemCompPack.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/Memory/XDM4Kx8.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/MemArbAndMux/RAMAdrDcd.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/MemArbAndMux/MemRdMux.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/MemArbAndMux/MemAccessCompPack.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/MemArbAndMux/ArbiterAndMux.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/JTAG_OCD_Prg/JTAGOCDPrgTop.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/DCM32to16.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/Core/avr_core.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/uC/top_avr_core_v8.vhd" into library work
+Parsing VHDL file "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/AVR8_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package numeric_std from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+Using precompiled package textio from library std
+Using precompiled package vital_timing from library ieee
+Using precompiled package vital_primitives from library ieee
+Compiling package synthctrlpack
+Compiling package avrucpackage
+Compiling package avr_uc_comppack
+Compiling package xmemcomppack
+Compiling package spi_mod_comp_pack
+Compiling package spi_slv_sel_comp_pack
+Compiling package memaccessctrlpack
+Compiling package memaccesscomppack
+Compiling package vcomponents
+Compiling package avr_core_comppack
+Compiling package synchronizercomppack
+Compiling package jtagcomppack
+Compiling package std_library
+Compiling package avr_adr_pack
+Compiling package rsnc_comp_pack
+Compiling package vpkg
+Compiling architecture bufg_v of entity bufg [bufg_default]
+Compiling architecture ibufg_v of entity ibufg [\IBUFG("DONT_CARE","0",true,"DEF...]
+Compiling architecture dcm_sp_clock_divide_by_2_v of entity dcm_sp_clock_divide_by_2 [dcm_sp_clock_divide_by_2_default]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_clock_lost_v of entity dcm_sp_clock_lost [dcm_sp_clock_lost_default]
+Compiling architecture dcm_sp_v of entity dcm_sp [\DCM_SP(true,"*",true,false,2.0,...]
+Compiling architecture behavioral of entity dcm32to16 [dcm32to16_default]
+Compiling architecture rtl of entity pm_fetch_dec [pm_fetch_dec_default]
+Compiling architecture rtl of entity reg_file [reg_file_default]
+Compiling architecture rtl of entity bit_processor [bit_processor_default]
+Compiling architecture rtl of entity io_adr_dec [io_adr_dec_default]
+Compiling architecture rtl of entity io_reg_file [io_reg_file_default]
+Compiling architecture rtl of entity alu_avr [alu_avr_default]
+Compiling architecture struct of entity avr_core [avr_core_default]
+Compiling architecture rtl of entity ramdatareg [ramdatareg_default]
+Compiling architecture rtl of entity external_mux [external_mux_default]
+Compiling architecture rtl of entity synchronizerdff [synchronizerdff_default]
+Compiling architecture rtl of entity pport [\pport(0)\]
+Compiling architecture rtl of entity pport [\pport(1)\]
+Compiling architecture rtl of entity pport [\pport(2)\]
+Compiling architecture rtl of entity pport [\pport(3)\]
+Compiling architecture rtl of entity pport [\pport(4)\]
+Compiling architecture rtl of entity pport [\pport(5)\]
+Compiling architecture rtl of entity swap_pins [swap_pins_default]
+Compiling architecture rtl of entity timer_counter [timer_counter_default]
+Compiling architecture rtl of entity resetgenerator [resetgenerator_default]
+Compiling architecture ramb16_s9_v of entity ramb16_s9 [\RAMB16_S9("000000000000","00000...]
+Compiling architecture rtl of entity xdm4kx8 [xdm4kx8_default]
+Compiling architecture ramb16_s18_v of entity ramb16_s18 [\RAMB16_S18("0000000000000000000...]
+Compiling architecture rtl of entity xpm8kx16 [xpm8kx16_default]
+Compiling package jtagpack
+Compiling package jtagprogrammerpack
+Compiling package jtagdatapack
+Compiling package jtagtapctrlsmpack
+Compiling architecture rtl of entity ocdprogtck [ocdprogtck_default]
+Compiling architecture rtl of entity ocdprogcp2 [ocdprogcp2_default]
+Compiling architecture rtl of entity resync1b_cp2 [resync1b_cp2_default]
+Compiling architecture rtl of entity resync1b_tck [resync1b_tck_default]
+Compiling architecture rtl of entity jtagocdprgtop [jtagocdprgtop_default]
+Compiling architecture rtl of entity rsnc_bit [\rsnc_bit(0,0)\]
+Compiling architecture rtl of entity spi_mod [spi_mod_default]
+Compiling architecture rtl of entity spi_slv_sel [\spi_slv_sel(1)\]
+Compiling architecture rtl of entity uart [uart_default]
+Compiling architecture rtl of entity arbiterandmux [arbiterandmux_default]
+Compiling architecture rtl of entity memrdmux [memrdmux_default]
+Compiling architecture rtl of entity ramadrdcd [ramadrdcd_default]
+Compiling architecture struct of entity top_avr_core_v8 [top_avr_core_v8_default]
+Compiling architecture behavior of entity avr8_tb
+Time Resolution for simulation is 1ps.
+Waiting for 35 sub-compilation(s) to finish...
+Compiled 117 VHDL Units
+Built simulation executable C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/AVR8_tb_isim_beh.exe
+Fuse Memory Usage: 58572 KB
+Fuse CPU Usage: 3546 ms

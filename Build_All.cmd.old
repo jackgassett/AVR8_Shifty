@@ -1,0 +1,63 @@
+REM For Butterfly 2.03+ which uses 32Mhz oscillator.
+set ucf=BPC3003_2.03+.ucf
+set FinalName=AVR8_PapilioOne
+xst -ise "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/AVR_Core.ise" -intstyle ise -ifn "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/top_avr_core_v8.xst" -ofn "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/top_avr_core_v8.syr"  > out.txt
+ngdbuild -intstyle ise -uc %ucf% -dd _ngo -nt timestamp -bm top_avr_core_V8.bmm -p xc3s250e-vq100-4 top_avr_core_v8.ngc top_avr_core_v8.ngd  >> out.txt
+map -ise "AVR_Core.ise" -intstyle ise -p xc3s250e-vq100-4 -cm area -ir off -pr off -c 100 -o top_avr_core_v8_map.ncd top_avr_core_v8.ngd top_avr_core_v8.pcf >> out.txt
+par -ise "AVR_Core.ise" -w -intstyle ise -ol std -t 1 top_avr_core_v8_map.ncd top_avr_core_v8.ncd top_avr_core_v8.pcf  >> out.txt
+trce -ise "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/AVR_Core.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top_avr_core_v8.twx top_avr_core_v8.ncd -o top_avr_core_v8.twr top_avr_core_v8.pcf -ucf %ucf%  >> out.txt
+bitgen -ise "AVR_Core.ise" -intstyle ise -f top_avr_core_v8.ut top_avr_core_v8.ncd  >> out.txt
+copy top_avr_core_v8.bit %FinalName%.bit
+copy top_avr_core_v8_bd.bmm %FinalName%_bd.bmm
+
+REM For Butterfly 2.03+ which uses 32Mhz oscillator.
+set ucf=BPC3003_2.03+.ucf
+set FinalName=AVR8_PapilioOne_500
+xst -ise "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/AVR_Core.ise" -intstyle ise -ifn "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/top_avr_core_v8.xst" -ofn "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/top_avr_core_v8.syr"  > out.txt
+ngdbuild -intstyle ise -uc %ucf% -dd _ngo -nt timestamp -bm top_avr_core_V8.bmm -p xc3s500e-vq100-4 top_avr_core_v8.ngc top_avr_core_v8.ngd  >> out.txt
+map -ise "AVR_Core.ise" -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o top_avr_core_v8_map.ncd top_avr_core_v8.ngd top_avr_core_v8.pcf >> out.txt
+par -ise "AVR_Core.ise" -w -intstyle ise -ol std -t 1 top_avr_core_v8_map.ncd top_avr_core_v8.ncd top_avr_core_v8.pcf  >> out.txt
+trce -ise "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/AVR_Core.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top_avr_core_v8.twx top_avr_core_v8.ncd -o top_avr_core_v8.twr top_avr_core_v8.pcf -ucf %ucf%  >> out.txt
+bitgen -ise "AVR_Core.ise" -intstyle ise -f top_avr_core_v8.ut top_avr_core_v8.ncd  >> out.txt
+copy top_avr_core_v8.bit %FinalName%.bit
+copy top_avr_core_v8_bd.bmm %FinalName%_bd.bmm
+
+REM For Butterfly Flight
+set ucf=BPA2002.ucf
+set FinalName=AVR8_ButterflyFlight
+REM xst -ise "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/AVR_Core.ise" -intstyle ise -ifn "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/top_avr_core_v8.xst" -ofn "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/top_avr_core_v8.syr" 
+ngdbuild -intstyle ise -uc %ucf% -dd _ngo -nt timestamp -bm top_avr_core_V8.bmm -p xc3s250e-vq100-4 top_avr_core_v8.ngc top_avr_core_v8.ngd  
+map -ise "AVR_Core.ise" -intstyle ise -p xc3s250e-vq100-4 -cm area -ir off -pr off -c 100 -o top_avr_core_v8_map.ncd top_avr_core_v8.ngd top_avr_core_v8.pcf 
+par -ise "AVR_Core.ise" -w -intstyle ise -ol std -t 1 top_avr_core_v8_map.ncd top_avr_core_v8.ncd top_avr_core_v8.pcf 
+trce -ise "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/AVR_Core.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top_avr_core_v8.twx top_avr_core_v8.ncd -o top_avr_core_v8.twr top_avr_core_v8.pcf -ucf %ucf% 
+bitgen -ise "AVR_Core.ise" -intstyle ise -f top_avr_core_v8.ut top_avr_core_v8.ncd 
+copy top_avr_core_v8.bit %FinalName%.bit
+copy top_avr_core_v8_bd.bmm %FinalName%_bd.bmm
+
+REM For Butterfly Light
+set ucf=BP1002.ucf
+set FinalName=AVR8_ButterflyLight
+REM xst -ise "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/AVR_Core.ise" -intstyle ise -ifn "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/top_avr_core_v8.xst" -ofn "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/top_avr_core_v8.syr"  > out.txt
+ngdbuild -intstyle ise -uc %ucf% -dd _ngo -nt timestamp -bm top_avr_core_V8.bmm -p xc3s250e-vq100-4 top_avr_core_v8.ngc top_avr_core_v8.ngd  >> out.txt
+map -ise "AVR_Core.ise" -intstyle ise -p xc3s250e-vq100-4 -cm area -ir off -pr off -c 100 -o top_avr_core_v8_map.ncd top_avr_core_v8.ngd top_avr_core_v8.pcf >> out.txt
+par -ise "AVR_Core.ise" -w -intstyle ise -ol std -t 1 top_avr_core_v8_map.ncd top_avr_core_v8.ncd top_avr_core_v8.pcf  >> out.txt
+trce -ise "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/AVR_Core.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top_avr_core_v8.twx top_avr_core_v8.ncd -o top_avr_core_v8.twr top_avr_core_v8.pcf -ucf %ucf%  >> out.txt
+bitgen -ise "AVR_Core.ise" -intstyle ise -f top_avr_core_v8.ut top_avr_core_v8.ncd  >> out.txt
+copy top_avr_core_v8.bit %FinalName%.bit
+copy top_avr_core_v8_bd.bmm %FinalName%_bd.bmm
+
+REM For Butterfly 2.01-2.02 which use the same ucf.
+set ucf=BPA2002_2.01.ucf
+set FinalName=AVR8_Butterfly2p01
+REM xst -ise "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/AVR_Core.ise" -intstyle ise -ifn "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/top_avr_core_v8.xst" -ofn "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/top_avr_core_v8.syr"  > out.txt
+ngdbuild -intstyle ise -uc %ucf% -dd _ngo -nt timestamp -bm top_avr_core_V8.bmm -p xc3s250e-vq100-4 top_avr_core_v8.ngc top_avr_core_v8.ngd  >> out.txt
+map -ise "AVR_Core.ise" -intstyle ise -p xc3s250e-vq100-4 -cm area -ir off -pr off -c 100 -o top_avr_core_v8_map.ncd top_avr_core_v8.ngd top_avr_core_v8.pcf >> out.txt
+par -ise "AVR_Core.ise" -w -intstyle ise -ol std -t 1 top_avr_core_v8_map.ncd top_avr_core_v8.ncd top_avr_core_v8.pcf  >> out.txt
+trce -ise "C:/dbdev/My Dropbox/GadgetFactory/AVR8/svn/trunk/AVR_Core.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top_avr_core_v8.twx top_avr_core_v8.ncd -o top_avr_core_v8.twr top_avr_core_v8.pcf -ucf %ucf%  >> out.txt
+bitgen -ise "AVR_Core.ise" -intstyle ise -f top_avr_core_v8.ut top_avr_core_v8.ncd  >> out.txt
+copy top_avr_core_v8.bit %FinalName%.bit
+copy top_avr_core_v8_bd.bmm %FinalName%_bd.bmm
+
+
+
+pause

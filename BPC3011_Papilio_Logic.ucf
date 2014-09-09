@@ -1,0 +1,90 @@
+##################################################################################
+## BPC3003_2.03+.ucf
+##
+## Author: Jack Gassett
+##
+## Details: http://gadgetforge.gadgetfactory.net/gf/project/butterfly_one/
+##
+## Contains assignment and iostandard information for
+## all used pins as well as timing and area constraints for Papilio One Version 2.03 and greater that uses 32Mhz oscillator.
+##
+##################################################################################
+
+# Crystal Clock - use 32MHz onboard oscillator
+NET "clk" LOC = "P94" | IOSTANDARD = LVCMOS25 | PERIOD = 31.25ns ;
+
+#Port A and B
+#NET "porta<0>" LOC = "P" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#0
+NET "porta<1>" LOC = "P139" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 | PULLUP;  #This is the ATmega32u4 reset line. Pullup makes the Arduino run.
+NET "porta<2>" LOC = "P118" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;  	#2
+NET "porta<3>" LOC = "P119" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;  	#3
+NET "porta<4>" LOC = "P120" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;  	#4
+NET "porta<5>" LOC = "P121" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;  	#5
+NET "porta<6>" LOC = "P123" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;  	#6
+NET "porta<7>" LOC = "P124" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;  	#7
+NET "portb<0>" LOC = "P126" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;  	#8
+NET "portb<1>" LOC = "P127" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ; 	#9
+NET "portb<2>" LOC = "P131" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#10
+NET "portb<3>" LOC = "P132" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#11
+NET "portb<4>" LOC = "P133" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#12
+NET "portb<5>" LOC = "P134" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#13
+NET "portb<6>" LOC = "P115" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#14
+NET "portb<7>" LOC = "P114" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#15
+
+# Port C and D
+NET "portc<0>" LOC = "P112" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#16
+NET "portc<1>" LOC = "P111" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#17  LED1
+NET "portc<2>" LOC = "P105" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#18
+NET "portc<3>" LOC = "P102" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#19
+NET "portc<4>" LOC = "P101" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#20
+NET "portc<5>" LOC = "P100" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#21
+NET "portc<6>" LOC = "P99" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#22
+NET "portc<7>" LOC = "P98" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#23
+NET "portd<0>" LOC = "P97" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#24
+NET "portd<1>" LOC = "P95" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#25
+NET "portd<2>" LOC = "P93" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#26
+NET "portd<3>" LOC = "P92" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#27
+NET "portd<4>" LOC = "P88" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#28
+NET "portd<5>" LOC = "P87" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#29
+NET "portd<6>" LOC = "P85" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#30
+NET "portd<7>" LOC = "P84" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#31
+
+# Port E and F
+NET "porte<0>" LOC = "P83" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#32
+NET "porte<1>" LOC = "P82" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;  	#33
+NET "porte<2>" LOC = "P81" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;  	#34
+NET "porte<3>" LOC = "P80" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;  	#35
+NET "porte<4>" LOC = "P79" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;  	#36
+NET "porte<5>" LOC = "P78" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;  	#37
+NET "porte<6>" LOC = "P75" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;  	#38
+NET "porte<7>" LOC = "P74" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;  	#39
+NET "portf<0>" LOC = "P67" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;  	#40
+NET "portf<1>" LOC = "P66" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;    #41
+NET "portf<2>" LOC = "P62" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#42
+NET "portf<3>" LOC = "P61" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#43
+NET "portf<4>" LOC = "P59" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#44
+NET "portf<5>" LOC = "P58" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#45
+NET "portf<6>" LOC = "P57" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#46
+NET "portf<7>" LOC = "P56" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#47
+
+#Not implemented in AVR8 yet
+#NET "portf<7>" LOC = "P55" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#48
+#NET "portf<7>" LOC = "P51" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#49
+#NET "portf<7>" LOC = "P50" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#50
+#NET "portf<7>" LOC = "P48" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#51	DIN for analog
+#NET "portf<7>" LOC = "P47" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#52	DOUT for analog
+#NET "portf<7>" LOC = "P39" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#53	SCLK for analog
+#NET "portf<7>" LOC = "P26" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8 ;	#		/CS for analog
+
+## RS232
+NET "rxd"  LOC = "P116" | IOSTANDARD = LVCMOS33 ;	#0 RX
+NET "txd"  LOC = "P117" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW ; #1 TX
+
+## Prohibit the automatic placement of pins that are connected to VCC or GND for configuration.
+CONFIG PROHIBIT=P144 ;		#HSWAP
+CONFIG PROHIBIT=P69 ;		#M0
+CONFIG PROHIBIT=P60 ;		#M1
+#CONFIG PROHIBIT=P ;		#M2
+#CONFIG PROHIBIT=P ;		#VS0
+#CONFIG PROHIBIT=P ;		#VS1
+#CONFIG PROHIBIT=P ;		#VS2

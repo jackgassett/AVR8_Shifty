@@ -1,0 +1,37 @@
+##################################################################################
+## S3E_Cocoon.ucf
+##
+## Author: Jack Gassett
+##
+## Details: http://www.gadgetfactory.net/gf/project/s3ecocoon/
+##
+##
+##################################################################################
+
+# Onboard 8Mhz Clock
+NET "clk" LOC = "P91" | IOSTANDARD = LVCMOS25;
+# Define clock period for 8MHz MHz oscillator
+NET "clk" PERIOD = 125ns HIGH 50%;
+
+# ConB Pins - 40 Pin Connector
+NET "portb<0>" LOC = "P44" | IOSTANDARD = LVCMOS25;	# ConB 1
+NET "porta<0>" LOC = "P43" | IOSTANDARD = LVCMOS25;	# ConB 2
+NET "portb<1>" LOC = "P48" | IOSTANDARD = LVCMOS25;	# ConB 3
+NET "porta<1>" LOC = "P47" | IOSTANDARD = LVCMOS25;	# ConB 4
+NET "portb<2>" LOC = "P50" | IOSTANDARD = LVCMOS25;	# ConB 5
+NET "porta<2>" LOC = "P49" | IOSTANDARD = LVCMOS25;	# ConB 6
+NET "portb<3>" LOC = "P54" | IOSTANDARD = LVCMOS25;	# ConB 7
+NET "porta<3>" LOC = "P53" | IOSTANDARD = LVCMOS25;	# ConB 8
+NET "portb<4>" LOC = "P58" | IOSTANDARD = LVCMOS25;	# ConB 9
+NET "porta<4>" LOC = "P57" | IOSTANDARD = LVCMOS25;	# ConB 10
+NET "portb<5>" LOC = "P61" | IOSTANDARD = LVCMOS25;	# ConB 11
+NET "porta<5>" LOC = "P60" | IOSTANDARD = LVCMOS25;	# ConB 12
+NET "portb<6>" LOC = "P63" | IOSTANDARD = LVCMOS25;	# ConB 13
+NET "porta<6>" LOC = "P62" | IOSTANDARD = LVCMOS25;	# ConB 14
+NET "portb<7>" LOC = "P66" | IOSTANDARD = LVCMOS25;	# ConB 15
+NET "porta<7>" LOC = "P65" | IOSTANDARD = LVCMOS25;	# ConB 16
+
+
+## USB Serial Channel 2
+NET "rxd"  LOC = "P90" | IOSTANDARD = LVCMOS25;		#USB MISO
+NET "txd"  LOC = "P86" | IOSTANDARD = LVCMOS25 | DRIVE = 4 | SLEW = SLOW ;	#USB MOSI

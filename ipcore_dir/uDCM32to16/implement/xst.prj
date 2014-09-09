@@ -1,0 +1,2 @@
+vhdl work ../../uDCM32to16.vhd
+vhdl work ../example_design/uDCM32to16_exdes.vhd

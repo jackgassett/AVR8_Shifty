@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Dropbox\GadgetFactory\archive\AVR8\svn\trunk\top_avr_core_v8.ncd
+OUTFILE=D:\Dropbox\GadgetFactory\archive\AVR8\svn\trunk\top_avr_core_v8.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=D:\Dropbox\GadgetFactory\archive\AVR8\svn\trunk
+LICENSE=WebPack
+USER_INFO=210797575_0_0_030

@@ -1,0 +1,61 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Sep 08 16:41:06 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+PROHIBIT = SITE "P144";
+PROHIBIT = SITE "P69";
+PROHIBIT = SITE "P60";
+COMP "clk" LOCATE = SITE "P94" LEVEL 1;
+COMP "rxd" LOCATE = SITE "P46" LEVEL 1;
+COMP "txd" LOCATE = SITE "P141" LEVEL 1;
+COMP "porta<1>" LOCATE = SITE "P139" LEVEL 1;
+COMP "porta<2>" LOCATE = SITE "P118" LEVEL 1;
+COMP "porta<3>" LOCATE = SITE "P119" LEVEL 1;
+COMP "portb<0>" LOCATE = SITE "P126" LEVEL 1;
+COMP "porta<4>" LOCATE = SITE "P120" LEVEL 1;
+COMP "portb<1>" LOCATE = SITE "P127" LEVEL 1;
+COMP "porta<5>" LOCATE = SITE "P121" LEVEL 1;
+COMP "portb<2>" LOCATE = SITE "P131" LEVEL 1;
+COMP "porta<6>" LOCATE = SITE "P123" LEVEL 1;
+COMP "portb<3>" LOCATE = SITE "P132" LEVEL 1;
+COMP "porta<7>" LOCATE = SITE "P124" LEVEL 1;
+COMP "portb<4>" LOCATE = SITE "P133" LEVEL 1;
+COMP "portc<0>" LOCATE = SITE "P112" LEVEL 1;
+COMP "portb<5>" LOCATE = SITE "P134" LEVEL 1;
+COMP "portc<1>" LOCATE = SITE "P111" LEVEL 1;
+COMP "portb<6>" LOCATE = SITE "P115" LEVEL 1;
+COMP "portc<2>" LOCATE = SITE "P105" LEVEL 1;
+COMP "portb<7>" LOCATE = SITE "P114" LEVEL 1;
+COMP "portc<3>" LOCATE = SITE "P102" LEVEL 1;
+COMP "portd<0>" LOCATE = SITE "P97" LEVEL 1;
+COMP "portc<4>" LOCATE = SITE "P101" LEVEL 1;
+COMP "portd<1>" LOCATE = SITE "P95" LEVEL 1;
+COMP "portc<5>" LOCATE = SITE "P100" LEVEL 1;
+COMP "portd<2>" LOCATE = SITE "P93" LEVEL 1;
+COMP "portc<6>" LOCATE = SITE "P99" LEVEL 1;
+COMP "portd<3>" LOCATE = SITE "P92" LEVEL 1;
+COMP "portc<7>" LOCATE = SITE "P98" LEVEL 1;
+COMP "porte<0>" LOCATE = SITE "P83" LEVEL 1;
+COMP "portd<4>" LOCATE = SITE "P88" LEVEL 1;
+COMP "porte<1>" LOCATE = SITE "P82" LEVEL 1;
+COMP "portd<5>" LOCATE = SITE "P87" LEVEL 1;
+COMP "porte<2>" LOCATE = SITE "P81" LEVEL 1;
+COMP "portd<6>" LOCATE = SITE "P85" LEVEL 1;
+COMP "porte<3>" LOCATE = SITE "P80" LEVEL 1;
+COMP "portd<7>" LOCATE = SITE "P84" LEVEL 1;
+COMP "portf<0>" LOCATE = SITE "P67" LEVEL 1;
+COMP "porte<4>" LOCATE = SITE "P79" LEVEL 1;
+COMP "portf<1>" LOCATE = SITE "P66" LEVEL 1;
+COMP "porte<5>" LOCATE = SITE "P78" LEVEL 1;
+COMP "portf<2>" LOCATE = SITE "P62" LEVEL 1;
+COMP "porte<6>" LOCATE = SITE "P75" LEVEL 1;
+COMP "portf<3>" LOCATE = SITE "P61" LEVEL 1;
+COMP "porte<7>" LOCATE = SITE "P74" LEVEL 1;
+COMP "portf<4>" LOCATE = SITE "P59" LEVEL 1;
+COMP "portf<5>" LOCATE = SITE "P58" LEVEL 1;
+COMP "portf<6>" LOCATE = SITE "P57" LEVEL 1;
+COMP "portf<7>" LOCATE = SITE "P56" LEVEL 1;
+NET "Inst_clk32to16/clkin1" PERIOD = 31.25 ns HIGH 50%;
+SCHEMATIC END;
+

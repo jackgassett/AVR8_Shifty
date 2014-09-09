@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/killian/Dropbox/GadgetFactory/archive/AVR8/svn/trunk/top_avr_core_v8.xst" -ofn "C:/Users/killian/Dropbox/GadgetFactory/archive/AVR8/svn/trunk/top_avr_core_v8.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc BPC3011_Papilio_Logic.ucf -bm top_avr_core_V8.bmm -p xc6slx9-tqg144-3 top_avr_core_v8.ngc top_avr_core_v8.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_avr_core_v8_map.ncd top_avr_core_v8.ngd top_avr_core_v8.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc BPC3011_Papilio_Logic.ucf -bm top_avr_core_V8.bmm -p xc6slx9-tqg144-3 top_avr_core_v8.ngc top_avr_core_v8.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_avr_core_v8_map.ncd top_avr_core_v8.ngd top_avr_core_v8.pcf 
+par -w -intstyle ise -ol high -mt off top_avr_core_v8_map.ncd top_avr_core_v8.ncd top_avr_core_v8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_avr_core_v8.twx top_avr_core_v8.ncd -o top_avr_core_v8.twr top_avr_core_v8.pcf -ucf BPC3011_Papilio_Logic.ucf 
+bitgen -intstyle ise -f top_avr_core_v8.ut top_avr_core_v8.ncd 

@@ -1,0 +1,1 @@
+vhdtdtfi -prj AVR_Core -o C:/Users/killian/Dropbox/GadgetFactory/archive/AVR8/svn/trunk/clk32to16.vhi -module clk32to16 -template C:/Xilinx/13.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work clk32to16.vhd 
